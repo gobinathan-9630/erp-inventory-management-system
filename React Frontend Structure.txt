@@ -1,0 +1,17 @@
+frontend
+ └── src
+      ├── components
+      │     ├── Navbar.js
+      │     └── Sidebar.js
+      │
+      ├── pages
+      │     ├── Login.js
+      │     ├── Dashboard.js
+      │     ├── Products.js
+      │     └── Customers.js
+      │
+      ├── services
+      │     └── api.js
+      │
+      ├── App.js
+      └── index.js

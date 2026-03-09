@@ -1,0 +1,9 @@
+CREATE TABLE product(
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+product_name VARCHAR(255),
+sku VARCHAR(100),
+category VARCHAR(100),
+unit_price DOUBLE,
+current_stock INT,
+reorder_level INT
+);

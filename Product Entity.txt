@@ -1,0 +1,31 @@
+package com.erp.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String productName;
+    private String sku;
+    private String category;
+    private double unitPrice;
+    private int currentStock;
+    private int reorderLevel;
+
+    public Product() {}
+
+    public Product(String productName,String sku,String category,double unitPrice,int currentStock,int reorderLevel){
+        this.productName = productName;
+        this.sku = sku;
+        this.category = category;
+        this.unitPrice = unitPrice;
+        this.currentStock = currentStock;
+        this.reorderLevel = reorderLevel;
+    }
+
+    // getters and setters
+}
